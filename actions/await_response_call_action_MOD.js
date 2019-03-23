@@ -288,7 +288,7 @@ action: function(cache) {
 			if (collected.size === 1) {
 				this.storeValue(collected.first(), storage, varName2, cache);
 			} else {
-				this.storeValue(collected, storage, varName2, cache);
+				this.storeValue(collected.array(), storage, varName2, cache);
 			}
 			this.executeResults(true, data, cache);
 		}.bind(this)).catch(function() {
